@@ -30,18 +30,18 @@ function checker() {
     
     for (i = 0; i < 9; i++) {
         var int = i
-        var test = attempt.children[int].children[1]
+        var test = $(attempt.children[int].children[1])
         console.log(test)
         if (parseInt(hour[i]) === moment().hour()) {
+            
             console.log(attempt.children[1].children[1])
             test.addClass("present")
-
         }
         else if (parseInt(hour[i]) > moment().hour()) {
-            this.set.addClass("future")
+            test.addClass("future")
         }
         else if (parseInt(hour[i]) < moment().hour()) {
-            this.set.addClass("past")
+            test.addClass("past")
         }
     }
 }
