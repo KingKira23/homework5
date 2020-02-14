@@ -23,3 +23,4 @@ for homework number 5
             ~~most likelly the dreaded event lisiners
 
  -->
+    couldnt get the colors to change when they should it would always be just one color
